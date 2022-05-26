@@ -1,0 +1,125 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDP 2.0</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="script/script.js"></script>
+</head>
+<body>
+    <nav class="nav">
+        <div class="container1">
+            <div class="logo">
+                <a href="#">Banana</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#Future">Future</a></li>
+                    <li><a href="#prod">Product</a></li>
+                    <li><a href="#crap">Services</a></li>
+                    <li><a href="#order">PRE Order</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="home">
+        <div class="Future" id="Future">
+            <h1 class="home1" id="ho"> 
+                The future of Banana is here
+    
+            </h1>
+          <p class="home2" id="home2">
+            Holisticly incentivize revolutionary collaboration and idea
+            sharing before cost effective users. Actual focused services
+            before highly efficient human capital.
+            
+            
+          </p>
+    
+    
+        </div>
+
+
+        <div class="parent" id="parent">
+            <img class="image2" src="img/table.svg" />
+            <img class="image1" src="img/img2.svg" />
+    
+          </div>
+            
+        
+      <div class="prod" id="prod">
+        <h1 class="prodt">
+            THE PRODUCT
+        </h1>
+        <h3 class="prodd" id="prodd">
+          Introduce the product here. A small description about what it is and how
+          it helps the user. You can also add some photos below.
+          
+        </h3>
+
+
+        <div class="crap" id="crap">
+            <img class="icrap" src="img/Epicarp.svg" alt="">
+        </div>
+
+
+
+        <div class="order" id="order">
+            <h1 class="prodt">
+                Order Your Banana Now
+            </h1>
+            <div class="container">
+                <form action="" id="contactForm">
+                    <div class="alert">Your Order Recived</div>
+        
+                    <div class="inputBox">
+                        <input type="text" id="name" placeholder="Order Your Banana Now...." />
+                    </div>
+        
+                    <div class="inputBox">
+                        <input type="email" id="emailid" placeholder="Your Email....." />
+                    </div>
+        
+                    <div class="inputBox">
+                        <textarea id="msgContent" cols="30" rows="10" placeholder="Address"></textarea>
+                    </div>
+        
+                    <div class="inputBox">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+            <script src="./mail.js"></script>
+        </div>
+    </section>
+        
+
+>
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/form.js"></script>
+
+    <script>
+        //  Function used to shrink nav bar removing paddings and adding black background 
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+</body>
+</html>
